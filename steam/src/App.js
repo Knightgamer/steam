@@ -1,10 +1,12 @@
-import React from 'react';
-import Navbar from './components/Navbar';
+import React from "react";
+import Navbar from "./components/Navbar";
+import Trailer from "./components/Trailer";
 
 function App() {
   return (
     <div>
-     <Navbar/>
+      {/* <Navbar /> */}
+      <Trailer />
     </div>
   );
 }
