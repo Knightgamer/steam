@@ -1,8 +1,9 @@
 import React from "react";
+import { CiMenuKebab } from "react-icons/ci";
 
 function Search() {
   return (
-    <div>
+    <div className="mr-5 md:mr-0 lg:mr-0">
       <form>
         <label
           htmlFor="search"
@@ -31,7 +32,7 @@ function Search() {
           <input
             type="search"
             id="small-input"
-            className="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-[#1e1f20] focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            className="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-[#1e1f2006] focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="Search"
             required
           />
@@ -41,6 +42,9 @@ function Search() {
           >
             Search
           </button>
+          <span className="flex absolute -right-8 top-1/2 transform -translate-y-1/2">
+            <CiMenuKebab size={30} />
+          </span>
         </div>
       </form>
     </div>
