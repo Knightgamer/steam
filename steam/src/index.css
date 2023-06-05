@@ -11,3 +11,69 @@ body {
     height: 80vh;
   }
 }
+
+#browse > .browse-option {
+  background-color: rgba(255 255 255 / 2%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0rem;
+  border: 1px solid rgba(255 255 255 / 10%);
+  outline: none;
+  border-radius: 0.5rem;
+  position: relative;
+  cursor: pointer;
+}
+
+#browse > .browse-option:hover > .browse-option-background,
+#browse > .browse-option:focus > .browse-option-background {
+  opacity: 0.8;
+}
+
+#browse > .browse-option > .browse-option-background {
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  transition: opacity 250ms;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+}
+
+#browse > .browse-option:nth-child(1) > .browse-option-background {
+  background-image: url("https://images.unsplash.com/photo-1482855549413-2a6c9b1955a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjR8fHZpZGVvJTIwZ2FtZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+}
+
+#browse > .browse-option:nth-child(2) > .browse-option-background {
+  background-image: url("https://images.unsplash.com/photo-1614465000772-1b302f406c47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fHZpZGVvJTIwZ2FtZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+}
+
+#browse > .browse-option:nth-child(3) > .browse-option-background {
+  background-image: url("https://images.unsplash.com/photo-1625805866449-3589fe3f71a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHZpZGVvJTIwZ2FtZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+}
+
+#browse > .browse-option:nth-child(4) > .browse-option-background {
+  background-image: url("https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHZpZGVvJTIwZ2FtZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+}
+
+#browse > .browse-option > i,
+#browse > .browse-option > .label {
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+#browse > .browse-option > i {
+  /* font-size: 2rem; */
+}
+
+#browse > .browse-option > .label {
+  font-weight: 500;
+  text-transform: uppercase;
+}
