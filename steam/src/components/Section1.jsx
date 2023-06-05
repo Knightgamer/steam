@@ -52,6 +52,29 @@ function Section1() {
           <span class="label">Free</span>
         </button>
       </div>
+
+      {/* LIST OPTIONS */}
+      <div
+        id="list"
+        class="no-scrollbar"
+        className="inline-flex rounded-md shadow-sm mt-5 overflow-auto w-auto text-sm"
+        data-active-index="0"
+      >
+        <div class="list-options">
+          <button class="list-option" type="button" data-index="0">
+            New
+          </button>
+          <button class="list-option" type="button" data-index="1">
+            Trending
+          </button>
+          <button class="list-option" type="button" data-index="2">
+            Top
+          </button>
+          <button class="list-option" type="button" data-index="3">
+            Upcoming
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
