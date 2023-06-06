@@ -46,14 +46,14 @@ const Testing = () => {
         autoPlay
         loop
         muted
-        onTimeUpdate={handleTimeUpdate}
+        // onTimeUpdate={handleTimeUpdate}
       ></video>
       {/* Left Arrow */}
-      <div className="hidden group-hover:block absolute top-1/2 left-5 transform -translate-y-1/2 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+      <div className="hidden group-hover:block absolute top-1/2 left-5 transform -translate-y-1/2 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer ease-in-out">
         <BsChevronCompactLeft onClick={prevSlide} size={30} />
       </div>
       {/* Right Arrow */}
-      <div className="hidden group-hover:block absolute top-1/2 right-5 transform -translate-y-1/2 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+      <div className="hidden group-hover:block absolute top-1/2 right-5 transform -translate-y-1/2 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer ease-in-out">
         <BsChevronCompactRight onClick={nextSlide} size={30} />
       </div>
       <div className="flex justify-center py-2">
