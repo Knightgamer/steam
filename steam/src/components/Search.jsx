@@ -43,7 +43,7 @@ function Search() {
             Search
           </button>
           <span className="flex absolute -right-8 top-1/2 transform -translate-y-1/2">
-            <CiMenuKebab size={30} />
+            <CiMenuKebab size={30} className="text-white"/>
           </span>
         </div>
       </form>
