@@ -1,6 +1,6 @@
 import React from "react";
 import Assassin from "../assets/videos/Assassin.mp4";
-import GTAV from "../assets/videos/Grand Theft Auto V Trailer.mp4";
+// import GTAV from "../assets/videos/Grand Theft Auto V Trailer.mp4";
 import Navbar from "./Navbar";
 
 const Trailer = () => {
