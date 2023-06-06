@@ -6,7 +6,7 @@ import Navbar from "./Navbar";
 const Trailer = () => {
   return (
     <div className="main relative">
-      <div className="video-container">
+      <div className="video-container h-[45vh]">
         <video
           className="brightness-75 w-full h-full object-cover"
           src={Assassin}
