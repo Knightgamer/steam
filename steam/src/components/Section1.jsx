@@ -2,6 +2,7 @@ import React from "react";
 import { TiFlash } from "react-icons/ti";
 import { FaTags, FaPercentage } from "react-icons/fa";
 import { BsStars } from "react-icons/bs";
+import Card from "./Card1";
 
 function Section1() {
   return (
@@ -78,106 +79,34 @@ function Section1() {
 
       {/* GAME SECTION 1 */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-5">
-        <div className="col-span-1">
-          <div className="flex flex-col">
-            <a href="#">
-              <div className="h-48 md:h-52 xl:h-80 w-full hover:opacity-75 transition-opacity">
-                <img
-                  className="object-cover rounded-lg h-full w-full"
-                  src="https://assets-prd.ignimgs.com/2020/12/15/among-us-button-fin-1608054673652.jpg"
-                  alt=""
-                />
-              </div>
-              <div className="mt-2">
-                <h1 className="font-light text-sm text-[#9C9C9C]">
-                  Action, Adventures
-                </h1>
-                <h1 className="font-bold text-lg text-[#F6F6F6]">
-                  Grand Theft Auto V
-                </h1>
-                <p className="text-[#03A9F4]">
-                  $5.99 <span className="text-white mr-1">.</span>
-                  <span className="text-white">84%</span>
-                </p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div className="col-span-1">
-          <div className="flex flex-col">
-            <a href="#">
-              <div className="h-48 md:h-52 xl:h-80 w-full hover:opacity-75 transition-opacity">
-                <img
-                  className="object-cover rounded-lg h-full w-full"
-                  src="https://m.media-amazon.com/images/I/91lmTAVXgHL.jpg"
-                  alt=""
-                />
-              </div>
-              <div className="mt-2">
-                <h1 className="font-light text-sm text-[#9C9C9C]">
-                  Action, Adventures
-                </h1>
-                <h1 className="font-bold text-lg text-[#F6F6F6]">
-                  Assassin Creed Valhalla
-                </h1>
-                <p className="text-[#03A9F4]">
-                  $5.99 <span className="text-white mr-1">.</span>
-                  <span className="text-white">84%</span>
-                </p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div className="col-span-1">
-          <div className="flex flex-col">
-            <a href="">
-              <div className="h-48 md:h-52 xl:h-80 w-full hover:opacity-75 transition-opacity">
-                <img
-                  className="object-cover rounded-lg h-full w-full"
-                  src="https://m.media-amazon.com/images/M/MV5BZTg0NjE0NTQtZTBlYS00OGI4LWE1NTgtYTY4ZmRlZThkYjEzXkEyXkFqcGdeQXVyNjUxODQxNzQ@._V1_FMjpg_UX1000_.jpg"
-                  alt=""
-                />
-              </div>
-              <div className="mt-2">
-                <h1 className="font-light text-sm text-[#9C9C9C]">
-                  Action, Adventures
-                </h1>
-                <h1 className="font-bold text-lg text-[#F6F6F6]">
-                  Assassin Creed Valhalla
-                </h1>
-                <p className="text-[#03A9F4]">
-                  $5.99 <span className="text-white mr-1">.</span>
-                  <span className="text-white">84%</span>
-                </p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div className="col-span-1">
-          <div className="flex flex-col">
-            <a href="">
-              <div className="h-48 md:h-52 xl:h-80 w-full hover:opacity-75 transition-opacity">
-                <img
-                  className="object-cover rounded-lg h-full w-full"
-                  src="https://assets-prd.ignimgs.com/2021/08/24/forza-horizon-5-button-fin-1629830068379.jpg"
-                  alt=""
-                />
-              </div>
-              <div className="mt-2">
-                <h1 className="font-light text-sm text-[#9C9C9C]">
-                  Action, Adventures
-                </h1>
-                <h1 className="font-bold text-lg text-[#F6F6F6]">
-                  Assassin Creed Valhalla
-                </h1>
-                <p className="text-[#03A9F4]">
-                  $5.99 <span className="text-white mr-1">.</span>
-                  <span className="text-white">84%</span>
-                </p>
-              </div>
-            </a>
-          </div>
-        </div>
+        <Card
+          genre="Action, Adventures"
+          name="Among Us"
+          price="$5.99"
+          discount="84%"
+          url="https://assets-prd.ignimgs.com/2020/12/15/among-us-button-fin-1608054673652.jpg"
+        />
+        <Card
+          genre="Action, Adventures"
+          name="Assassin Creed Valhalla"
+          price="$5.99"
+          discount="84%"
+          url="https://m.media-amazon.com/images/I/91lmTAVXgHL.jpg"
+        />
+        <Card
+          genre="Action, Adventures"
+          name="Doraemon Space Heroes"
+          price="$5.99"
+          discount="84%"
+          url="https://m.media-amazon.com/images/M/MV5BZTg0NjE0NTQtZTBlYS00OGI4LWE1NTgtYTY4ZmRlZThkYjEzXkEyXkFqcGdeQXVyNjUxODQxNzQ@._V1_FMjpg_UX1000_.jpg"
+        />
+        <Card
+          genre="Action, Adventures"
+          name="Forza Horizon"
+          price="$5.99"
+          discount="84%"
+          url="https://assets-prd.ignimgs.com/2021/08/24/forza-horizon-5-button-fin-1629830068379.jpg"
+        />
       </div>
     </div>
   );
