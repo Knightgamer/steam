@@ -47,6 +47,7 @@ const Trailer = () => {
         autoPlay
         loop
         muted
+        onTimeUpdate={handleTimeUpdate}
       ></video>
       {/* Left Arrow */}
       <div
