@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/knightgamer.github.io/steam/static/css/main.63df330f.css",
+    "main.js": "/knightgamer.github.io/steam/static/js/main.395543da.js",
+    "static/media/Assassin.mp4": "/knightgamer.github.io/steam/static/media/Assassin.4aed5723dc8c7f380392.mp4",
+    "static/media/Grand Theft Auto V Trailer.mp4": "/knightgamer.github.io/steam/static/media/Grand Theft Auto V Trailer.d7bcac79b4c66be611b3.mp4",
+    "index.html": "/knightgamer.github.io/steam/index.html",
+    "main.63df330f.css.map": "/knightgamer.github.io/steam/static/css/main.63df330f.css.map",
+    "main.395543da.js.map": "/knightgamer.github.io/steam/static/js/main.395543da.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.63df330f.css",
+    "static/js/main.395543da.js"
+  ]
+}
