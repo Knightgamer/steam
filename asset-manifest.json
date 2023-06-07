@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/steam/static/css/main.63df330f.css",
-    "main.js": "/steam/static/js/main.871c6de4.js",
+    "main.js": "/steam/static/js/main.e1af841f.js",
     "static/media/Assassin.mp4": "/steam/static/media/Assassin.4aed5723dc8c7f380392.mp4",
     "static/media/Grand Theft Auto V Trailer.mp4": "/steam/static/media/Grand Theft Auto V Trailer.d7bcac79b4c66be611b3.mp4",
     "index.html": "/steam/index.html",
     "main.63df330f.css.map": "/steam/static/css/main.63df330f.css.map",
-    "main.871c6de4.js.map": "/steam/static/js/main.871c6de4.js.map"
+    "main.e1af841f.js.map": "/steam/static/js/main.e1af841f.js.map"
   },
   "entrypoints": [
     "static/css/main.63df330f.css",
-    "static/js/main.871c6de4.js"
+    "static/js/main.e1af841f.js"
   ]
 }
