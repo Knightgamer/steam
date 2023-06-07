@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="text-white top-0 left-0 right-0 flex absolute justify-between mx-auto px-4 backdrop-filter backdrop-blur-sm bg-gradient-to-b  from-[rgba(0,0,0,0.95)] to-[rgba(0,0,0,0.4)] shadow-lg">
+    <div className="text-white top-0 left-0 right-0 flex absolute justify-between mx-auto px-4 backdrop-filter backdrop-blur-sm bg-gradient-to-b  from-[rgba(0,0,0,0.95)] to-[rgba(0,0,0,0.4)] shadow-lg z-10">
       <h1 className="flex mt-3.5">
         <FaSteam className="mr-3" size={24} />
         <span>STEAM</span>
