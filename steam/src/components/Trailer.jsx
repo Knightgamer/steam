@@ -68,10 +68,10 @@ const Trailer = () => {
         style={{ zIndex: 5 }}
       >
         <div className="lg:mb-10 md:mb-4 mb-1 md:ml-20 lg:ml-36 ml-10">
-          <h1 className="text-white lg:text-4xl text-[10px] md:text-2xl font-semi-bold">
+          <h1 className="text-white lg:text-4xl text-base md:text-2xl font-semi-bold">
             Assassin's Creed Valhalla
           </h1>
-          <p className="text-[#00aeff] lg:text-2xl text-[10px] md:text-xs font-medium">
+          <p className="text-[#00aeff] lg:text-2xl text-sm md:text-xs font-medium">
             $5.99
           </p>
           <button
