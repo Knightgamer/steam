@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
-import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import AssassinVideo from "../assets/videos/Assassin.mp4";
 import GTAGVideo from "../assets/videos/Grand Theft Auto V Trailer.mp4";
+import { GoMute, GoUnmute } from "react-icons/go";
 
 const Testing = () => {
   const videos = [
@@ -13,12 +13,24 @@ const Testing = () => {
       url: GTAGVideo,
       endTime: 84,
     },
-
     // Add more videos with their respective end times
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [muted, setMuted] = useState(true);
   const videoRef = useRef(null);
+  const viewersCount = 100; // Number of viewers (replace with dynamic value)
+
+  const handleScroll = (e) => {
+    const delta = Math.sign(e.deltaY);
+    if (delta === 1) {
+      // Scroll down
+      nextSlide();
+    } else if (delta === -1) {
+      // Scroll up
+      prevSlide();
+    }
+  };
 
   const prevSlide = () => {
     const newIndex = (currentIndex - 1 + videos.length) % videos.length;
@@ -30,37 +42,62 @@ const Testing = () => {
     setCurrentIndex(newIndex);
   };
 
-  const handleTimeUpdate = () => {
-    const video = videoRef.current;
-    if (video.currentTime >= videos[currentIndex].endTime) {
-      nextSlide();
-    }
+  const handleMute = () => {
+    setMuted(true);
+    videoRef.current.muted = true;
+  };
+
+  const handleUnmute = () => {
+    setMuted(false);
+    videoRef.current.muted = false;
   };
 
   return (
-    <div className="max-w-[1440px] h-[780px] w-full m-auto py-16 px-4 relative group">
-      <video
-        ref={videoRef}
-        src={videos[currentIndex].url}
-        className="w-full h-full rounded-2xl object-cover"
-        autoPlay
-        loop
-        muted
-        // onTimeUpdate={handleTimeUpdate}
-      ></video>
-      {/* Left Arrow */}
-      <div className="hidden group-hover:block absolute top-1/2 left-5 transform -translate-y-1/2 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer ease-in-out">
-        <BsChevronCompactLeft onClick={prevSlide} size={30} />
+    <div
+      className="w-full m-auto py-16 relative group flex"
+      onWheel={handleScroll}
+    >
+      <div className="relative flex-1">
+        <video
+          ref={videoRef}
+          src={videos[currentIndex].url}
+          className="w-full h-[25vh] md:h-[40vh] lg:h-[80vh] rounded-2xl object-cover"
+          autoPlay
+          loop
+          muted={muted}
+        ></video>
+        {/* Mute Button */}
+        {muted ? (
+          <div
+            className="absolute top-0 left-3 transform translate-y-full flex items-center space-x-2 cursor-pointer"
+            onClick={handleUnmute}
+          >
+            <GoMute size={25} className="text-white ml-3" />
+          </div>
+        ) : (
+          <div
+            className="absolute top-1 left-3 transform translate-y-full flex items-center space-x-2 cursor-pointer"
+            onClick={handleMute}
+          >
+            <GoUnmute size={25} className="text-white ml-3" />
+          </div>
+        )}
+
+        {/* Line Indicator */}
+
+        {/* Live Count */}
+        <div className="absolute top-1 right-3 transform translate-y-full flex items-center text-white rounded-md">
+          <span className="bg-red-500 rounded-full px-2 py-1 text-sm font-bold mr-1">
+            LIVE
+          </span>
+          <span className="text-sm block">{viewersCount} watching</span>
+        </div>
       </div>
-      {/* Right Arrow */}
-      <div className="hidden group-hover:block absolute top-1/2 right-5 transform -translate-y-1/2 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer ease-in-out">
-        <BsChevronCompactRight onClick={nextSlide} size={30} />
-      </div>
-      <div className="flex justify-center py-2">
+      <div className="absolute left-0 top-0 bottom-0 flex flex-col justify-center py-2 pl-2">
         {videos.map((video, index) => (
           <div
             key={index}
-            className={`h-1 w-10 mx-1 rounded-full ${
+            className={`h-1 my-1 rounded-full ${
               index === currentIndex ? "bg-white" : "bg-gray-300/50"
             }`}
           ></div>
