@@ -32,6 +32,25 @@ const Testing = () => {
     }
   };
 
+  const handleTouchStart = (e) => {
+    const touchStartY = e.touches[0].clientY;
+    videoRef.current._touchStartY = touchStartY;
+  };
+
+  const handleTouchEnd = (e) => {
+    const touchEndY = e.changedTouches[0].clientY;
+    const touchStartY = videoRef.current._touchStartY;
+    const deltaY = touchEndY - touchStartY;
+
+    if (deltaY > 0) {
+      // Swipe down
+      nextSlide();
+    } else if (deltaY < 0) {
+      // Swipe up
+      prevSlide();
+    }
+  };
+
   const prevSlide = () => {
     const newIndex = (currentIndex - 1 + videos.length) % videos.length;
     setCurrentIndex(newIndex);
@@ -56,6 +75,8 @@ const Testing = () => {
     <div
       className="w-full m-auto py-16 relative group flex"
       onWheel={handleScroll}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
     >
       <div className="relative flex-1">
         <video
