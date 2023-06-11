@@ -3,6 +3,7 @@ import { TiFlash } from "react-icons/ti";
 import { FaTags, FaPercentage } from "react-icons/fa";
 import { BsStars } from "react-icons/bs";
 import Card from "./Card1";
+import GameSectionC1 from "./GameSectionC1";
 
 function Section1() {
   return (
@@ -108,6 +109,10 @@ function Section1() {
           url="https://assets-prd.ignimgs.com/2021/08/24/forza-horizon-5-button-fin-1629830068379.jpg"
         />
       </div>
+
+      {/* GAME SECTION C1 */}
+      <GameSectionC1 />
+      <div className="h-[50px] text-white">hello</div>
     </div>
   );
 }
