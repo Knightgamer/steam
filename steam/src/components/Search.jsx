@@ -3,7 +3,7 @@ import { CiMenuKebab } from "react-icons/ci";
 import { RiFilter2Line } from "react-icons/ri";
 function Search() {
   return (
-    <div className="mr-5 md:mr-0 lg:mr-0">
+    <div>
       <form>
         <label
           htmlFor="search"
