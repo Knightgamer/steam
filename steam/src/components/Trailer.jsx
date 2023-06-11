@@ -7,16 +7,18 @@ import Navbar from "./Navbar";
 const Trailer = () => {
   const videos = [
     {
-      url: AssassinVideo,
+      videoName: AssassinVideo,
       endTime: 240,
       name: "Assassin's Creed Valhalla",
       price: "$5.99",
+      url: "https://www.ubisoft.com/en-gb/game/assassins-creed/valhalla",
     },
     {
-      url: GTAGVideo,
+      videoName: GTAGVideo,
       endTime: 84,
       name: "Grand Theft Auto V",
       price: "$9.99",
+      url: "https://www.rockstargames.com/gta-v",
     },
     // Add more videos with their respective end times, names, and prices
   ];
@@ -45,7 +47,7 @@ const Trailer = () => {
     <div className="h-[40vh] md:h-[60vh] lg:h-[80vh] relative group">
       <video
         ref={videoRef}
-        src={videos[currentIndex].url}
+        src={videos[currentIndex].videoName}
         className="brightness-75 opacity-100 w-full h-full rounded-2xl object-cover transition-transform duration-1000 ease-in-out"
         autoPlay
         loop
@@ -77,14 +79,15 @@ const Trailer = () => {
           <p className="text-[#00aeff] lg:text-2xl text-sm md:text-xs font-medium">
             {videos[currentIndex].price}
           </p>
-          <button
+          <a
+            href={videos[currentIndex].url}
             type="submit"
             className="text-white mt-1 bg-blue-700 hover:bg-blue-800 focus:ring-1 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800
         sm:text-base
         "
           >
             Buy Now
-          </button>
+          </a>
         </div>
       </div>
       <div className="flex justify-center py-2">
