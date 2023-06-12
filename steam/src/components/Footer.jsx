@@ -10,13 +10,13 @@ function Footer() {
           <div className="sm:flex sm:items-center sm:justify-between">
             <div className="flex items-center justify-between">
               <a href="#" className="flex items-center mb-4 sm:mb-0">
-                <IoLogoSteam className="h-8 mr-3 text-white" size={28} />
+                <IoLogoSteam className="h-10 mr-3 text-white" size={50} />
                 <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white text-white">
                   Steam
                 </span>
               </a>
               <a href="#" className="flex items-center mb-4 sm:mb-0 ml-4">
-                <SiValve className="h-8 mr-3 text-white " size={30} />
+                <SiValve className="h-10 mr-3 text-white" size={50} />
                 <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white text-white">
                   Valve
                 </span>

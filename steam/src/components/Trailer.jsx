@@ -44,7 +44,7 @@ const Trailer = () => {
   };
 
   return (
-    <div className="h-[40vh] md:h-[60vh] lg:h-[80vh] relative group">
+    <div className="h-[50vh] md:h-[60vh] lg:h-[80vh] relative group">
       <video
         ref={videoRef}
         src={videos[currentIndex].videoName}
