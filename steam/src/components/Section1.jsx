@@ -112,7 +112,6 @@ function Section1() {
 
       {/* GAME SECTION C1 */}
       <GameSectionC1 />
-      <div className="h-[50px] text-white">hello</div>
     </div>
   );
 }

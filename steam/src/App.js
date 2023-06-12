@@ -4,6 +4,7 @@ import Search from "./components/Search";
 import Section1 from "./components/Section1";
 import Testing from "./components/Testing";
 import GameSectionC1 from "./components/GameSectionC1";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         {/* <GameSectionC1 /> */}
         {/* <Testing /> */}
       </div>
+      <Footer />
     </div>
   );
 }
