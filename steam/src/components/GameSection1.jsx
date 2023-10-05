@@ -8,13 +8,13 @@ function GameSection1({ genre, name, discount, price, url }) {
           <div className="h-48 md:h-52 xl:h-80 w-full hover:opacity-75 transition-opacity relative">
             <div className="absolute inset-0">
               <img
-                className="object-fill rounded-lg h-full w-full"
+                className="object-fill rounded-lg h-[90%] w-full"
                 src={url}
                 alt=""
               />
             </div>
           </div>
-          <div className="mt-2">
+          <div className="">
             <h1 className="font-light text-sm text-[#9C9C9C]">{genre}</h1>
             <h1 className="font-bold text-lg text-[#F6F6F6]">{name}</h1>
             <p className="text-[#03A9F4]">

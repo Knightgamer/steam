@@ -10,11 +10,11 @@ function App() {
   return (
     <div>
       <Trailer />
-      <div className="max-w-[360px] md:max-w-[640px] lg:max-w-[1240px] mx-auto mt-7 md:mt-10 lg:mt-14">
-        <Search />
+      <div className="max-w-[360px] md:max-w-[640px] lg:max-w-[1240px] mx-auto mt-7 md:mt-10 lg:mt-14 ">
+        <Search />    
         <Section1 />
         {/* <GameSectionC1 /> */}
-        {/* <Testing /> */}
+        <Testing />
       </div>
       <Footer />
     </div>

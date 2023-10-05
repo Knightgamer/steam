@@ -21,16 +21,16 @@ const Testing = () => {
   const videoRef = useRef(null);
   const viewersCount = 100; // Number of viewers (replace with dynamic value)
 
-  const handleScroll = (e) => {
-    const delta = Math.sign(e.deltaY);
-    if (delta === 1) {
-      // Scroll down
-      nextSlide();
-    } else if (delta === -1) {
-      // Scroll up
-      prevSlide();
-    }
-  };
+  // const handleScroll = (e) => {
+  //   const delta = Math.sign(e.deltaY);
+  //   if (delta === 1) {
+  //     // Scroll down
+  //     nextSlide();
+  //   } else if (delta === -1) {
+  //     // Scroll up
+  //     prevSlide();
+  //   }
+  // };
 
   const handleTouchStart = (e) => {
     const touchStartY = e.touches[0].clientY;
@@ -74,7 +74,7 @@ const Testing = () => {
   return (
     <div
       className="w-full m-auto py-16 relative group flex"
-      onWheel={handleScroll}
+      // onWheel={handleScroll}
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
