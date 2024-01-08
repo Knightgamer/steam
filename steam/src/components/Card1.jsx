@@ -17,7 +17,7 @@ function Card1({ genre, name, discount, price, url }) {
             <h1 className="font-bold text-lg text-[#F6F6F6]">{name}</h1>
             <p className="text-[#03A9F4]">
               {price}
-              <span className="text-white mr-1">.</span>
+              <span className="text-white mr-2">.</span> 
               <span className="text-white">{discount}</span>
             </p>
           </div>
